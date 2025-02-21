@@ -1,0 +1,9 @@
+// add active class on the search element ( container ).
+
+.search.active .search__btn {
+	transform: translateX(24rem);
+}
+
+.search.active .search__input {
+	width: 25rem;
+}

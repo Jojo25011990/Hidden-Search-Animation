@@ -1,0 +1,43 @@
+.search__btn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 8rem;
+	width: 8rem;
+	background-color: $bg-color;
+	color: $button-color;
+	font-size: 4rem;
+	border: 0;
+	transition: all 0.2s ease;
+	cursor: pointer;
+	border-radius: 1rem;
+
+	//  *** btn ( icon ) hover effect ***
+	&:hover {
+		color: $bg-linearGradient-02;
+	}
+}
+
+.search__input {
+	font: {
+		size: 2.5rem;
+		style: italic;
+	}
+	background-color: $bg-color;
+	color: darken($bg-color, 25%);
+	width: 6.5rem;
+	height: 8rem;
+	transition: width 0.2s ease;
+	border: 0;
+	padding-left: 1.5rem;
+	border-radius: 1rem;
+
+	&::placeholder {
+		color: darken($bg-color, 25%);
+	}
+}
+
+.search__btn:focus,
+.search__input:focus {
+	outline: none;
+}
